@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Montserrat", sans-serif;
+        }
+        .w3-row-padding img {
+            margin-bottom: 12px;
+        }
+        .w3-sidebar {
+            width: 120px;
+            background: #222;
+        }
+        #main {
+            margin-left: 120px;
+        }
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body class="w3-black">
+
+    <!-- Sidebar Navigation -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" style="width:100%" alt="Avatar">
+        <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>ABOUT</p>
+        </a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-th w3-xxlarge"></i>
+            <p>PORTFOLIO</p>
+        </a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACT</p>
+        </a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+
+        <!-- Home Section -->
+        <header class="w3-container w3-padding-32 w3-center" id="home">
+            <h1 class="w3-jumbo">My Portfolio</h1>
+            <p>Welcome to my personal portfolio website.</p>
+            <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" alt="Profile Picture" class="w3-image" width="300" height="auto">
+        </header>
+
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <h2 class="w3-text-light-grey">About Me</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <p>Hi! I'm a creative professional with a passion for design, development, and bringing ideas to life. With a background in [Your Skills/Experience Here], I specialize in creating impactful visual and digital experiences.</p>
+            <h3 class="w3-padding-16 w3-text-light-grey">Skills</h3>
+            <p class="w3-wide">Web Design</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+            </div>
+            <p class="w3-wide">Photography</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
+            </div>
+            <p class="w3-wide">Programming</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+            </div>
+        </div>
+
+        <!-- Portfolio Section -->
+        <div class="w3-padding-64 w3-content" id="portfolio">
+            <h2 class="w3-text-light-grey">My Work</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <div class="w3-row-padding" style="margin-top:32px">
+                <div class="w3-third w3-margin-bottom">
+                    <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Project 1" style="width:100%">
+                    <div class="w3-container w3-white">
+                        <p><b>Project 1</b></p>
+                        <p>A description of this project goes here.</p>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Project 2" style="width:100%">
+                    <div class="w3-container w3-white">
+                        <p><b>Project 2</b></p>
+                        <p>A description of this project goes here.</p>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="https://www.w3schools.com/w3images/nature.jpg" alt="Project 3" style="width:100%">
+                    <div class="w3-container w3-white">
+                        <p><b>Project 3</b></p>
+                        <p>A description of this project goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+            <h2 class="w3-text-light-grey">Contact Me</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> City, Country</p>
+                <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 123456789</p>
+                <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Email: example@mail.com</p>
+            </div>
+            <form action="/submit_contact_form" method="POST">
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+                <p><textarea class="w3-input w3-padding-16 w3-border" placeholder="Message" required name="Message"></textarea></p>
+                <p>
+                    <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </p>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey">
+            <p>Connect with me on social media.</p>
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>
